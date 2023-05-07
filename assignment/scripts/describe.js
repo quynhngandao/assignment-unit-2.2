@@ -26,10 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called name and set it to 'Dane' as a string.
+// Then we use a conditional statement to check if the name variable is equal to the string 'Mary'.
+// If so, we console.log 'Hi, Mary!' if name is 'Mary'
+// If the name variable is not equal to the string 'Mary', it is equal to the string 'Dane' so we console.log 'How do you do?'.
 
 //CODE
 /*
@@ -45,10 +45,12 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make 2 variables called secret and code and set the code variable to 123 as a number.
+// Then we use an if statement to check if the code variable is equal the number 123.
+// If so, the secret variable is set to the string 'super' and the code variable is multiplied by 2 (which the code execute as the number 246)
+// Then we use another if statement to check if the code variable is greater than 250.
+// If so, the secret variable is set to the string 'duper'.
+// Then we console.log the secret variable and not the code variable (which the code execute as the string 'super').
 
 //CODE
 /*
@@ -70,10 +72,17 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make 3 variables called isStudent (set to true boolean), age (set to number 34), and zip (set to number 55407).
+// Then we use conditional statement to check the values of isStudent, age, and zip variables and execute the code based on those values.
+// The first If statement checks if both statements are true: isStudent variable is true AND zip variable is greater than 80000
+//// If true: The code excute and console.log a string 'You're a student on the West Coast!'.
+// If above statment is false, then the first Else If checks if either statements are true: isStudent variable is false OR age variable is less than 30
+//// If true: The code excute and console.log a string 'What are your hobbies?'.
+// If above statment is false, then the second Else If checks if the statement is true: isStudent variable is true
+//// If true: The code execute and console.log a string 'Welcome to Prime!'.
+// If none of the above conditions are true, the code execute and console.log a string 'How about the weather?'.
+
+// Output: Welcome to Prime!
 
 //CODE
 /*
@@ -113,9 +122,9 @@ if (isStudent === true && zip > 80000 ) {
 /*
 let number = 1;
 
-// FIX - number-- decrements number, but the instructions ask to increment. 
+// FIX - number-- decrements number, but the instructions ask to increment.
 // Should be number++.
-number--; 
+number--;
 
 if (number >= 2) {
   console.log('yes');
@@ -130,12 +139,24 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
-let colorOne = 'red';
-let colorTwo = 'blue';
+let colorOne = 'red';     // FIX: let colorOne = 'blue';
+let colorTwo = 'blue';    // FIX: let colorTwo = 'red';
+let mix = true;
+
+if (mix === true) {
+  colorOne = 'purple';   // ADD: colorTwo = 'purple';
+}
+*/
+
+//ANSWER
+/*
+let colorOne = 'blue';
+let colorTwo = 'red';
 let mix = true;
 
 if (mix === true) {
   colorOne = 'purple';
+  colorTwo = 'purple';
 }
 */
 
@@ -147,7 +168,17 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
-if (temp > 39 || time >= 4) {
+if (temp > 39 || time >= 4) {      // FIX: if (temp > 39 && time >= 4) {
+  console.log('throw away the food!');
+}
+*/
+
+//ANSWER
+/*
+let temp = 40;
+const time = 4;
+
+if (temp > 39 && time >= 4) {
   console.log('throw away the food!');
 }
 */
@@ -160,10 +191,18 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
-if(minAge <= age) {
-  console.log('no entry');
-} else {
+if(minAge <= age) {               // FIX although equivalent, if writing based on the statemet: if(age >= minAge) {
+  console.log('no entry');        // FIX: console.log('enter');
+} else {                          // REMOVE else statement because it was not stated in the problem to console.log('no entry');
   console.log('enter');
 }
 */
 
+//ANSWER
+/*
+let age = 21;
+const minAge = 21;
+
+if(age >= minAge) {
+  console.log('enter'); 
+*/
