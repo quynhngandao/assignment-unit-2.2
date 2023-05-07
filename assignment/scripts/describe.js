@@ -139,12 +139,12 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
-let colorOne = 'red';     // FIX: let colorOne = 'blue';
-let colorTwo = 'blue';    // FIX: let colorTwo = 'red';
+let colorOne = 'red';     // FIX the incorrect string: let colorOne = 'blue';
+let colorTwo = 'blue';    // FIX the incorrect string: let colorTwo = 'red';
 let mix = true;
 
-if (mix === true) {
-  colorOne = 'purple';   // ADD: colorTwo = 'purple';
+if (mix === true) {      // OPTIONAL to remove as === is redundant: if (mix) {
+  colorOne = 'purple';   // ADD the missing statement: colorTwo = 'purple';
 }
 */
 
@@ -154,7 +154,7 @@ let colorOne = 'blue';
 let colorTwo = 'red';
 let mix = true;
 
-if (mix === true) {
+if (mix === true) {    
   colorOne = 'purple';
   colorTwo = 'purple';
 }
@@ -168,7 +168,7 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
-if (temp > 39 || time >= 4) {      // FIX: if (temp > 39 && time >= 4) {
+if (temp > 39 || time >= 4) {      // FIX as we need to check if BOTH conditions are true: if (temp > 39 && time >= 4) {
   console.log('throw away the food!');
 }
 */
@@ -191,8 +191,8 @@ if (temp > 39 && time >= 4) {
 let age = 21;
 const minAge = 21;
 
-if(minAge <= age) {               // FIX although equivalent, if writing based on the statemet: if(age >= minAge) {
-  console.log('no entry');        // FIX: console.log('enter');
+if(minAge <= age) {               // FIX although equivalent, if we follow instruction: if(age >= minAge) {
+  console.log('no entry');        // FIX to the correct string: console.log('enter');
 } else {                          // REMOVE else statement because it was not stated in the problem to console.log('no entry');
   console.log('enter');
 }
